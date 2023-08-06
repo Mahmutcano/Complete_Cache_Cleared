@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap);
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app {
+  height: 100vh;
+}
+:root {
+  --btn-width: 100%;
+  --btn-height: 100%;
+  --btn-text-color: #fff;
+  --btn-border-radious: 10px;
+  --btn-thikness: -10px;
+  --btn-font-size: 1.5em;
+  --btn-fourground-color: #ce352e;
+  --btn-background-color: #541614;
+  --body-background: #455063;
+}
+
+body {
+  background: var(--body-background);
+  font-family: "Rubik Maze", cursive;
+  width: 150px;
+  height: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.DLNtOfJFCAaBYn88kd4b {
+  height: 100vh;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.mk8B64a47gLM4dVmCbLz {
+  cursor: pointer;
+  width: var(--btn-width);
+  height: var(--btn-height);
+  display: grid;
+  place-items: center;
+  font-size: var(--btn-font-size);
+  border-radius: var(--btn-border-radious);
+  position: relative;
+  background: var(--btn-background-color);
+}
+.mk8B64a47gLM4dVmCbLz:before {
+  position: absolute;
+  content: "Clear Cache!";
+  width: 100%;
+  height: 100%;
+  background: var(--btn-fourground-color);
+  border-radius: var(--btn-border-radious);
+  transform: translateY(var(--btn-thikness));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-weight: 800;
+  transition: all 0.25s ease;
+  color: var(--btn-text-color);
+}
+
+.mk8B64a47gLM4dVmCbLz:hover:before,
+.mk8B64a47gLM4dVmCbLz:focus:before {
+  transform: translateY(calc(var(--btn-thikness) + var(--btn-thikness) / 2.5));
+}
+
+.mk8B64a47gLM4dVmCbLz:active:before {
+  transform: translateY(calc(var(--btn-thikness) / 10));
+}
+
